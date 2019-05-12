@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cameraViewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/ivBtnCameraSwitch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/switch_camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/ic_switch"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/ivBtnCameraCapture"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ic_shutter"
+        android:contentDescription="@string/capture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ivBtnGallery"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/gallery"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:srcCompat="@drawable/ic_photo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
